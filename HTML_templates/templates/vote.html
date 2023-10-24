@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h3 style="margin-bottom: 20px"><strong>Pick Your Choice</strong></h3>
+
+    <h4>What is your favourite programming language</h4>
+
+    <form method="POST" action=" {% url 'result' question.id %} ">
+      <ul class="list-group" style="margin: 0px">
+        <label>
+          <li class="list-group-item">
+            <input
+              class="form-check-input me-1"
+              type="radio"
+              name="choice"
+              value="{{option.id}}"
+              aria-label="..."
+            />
+            Java
+          </li>
+        </label>
+        <label>
+          <li class="list-group-item">
+            <input
+              class="form-check-input me-1"
+              type="radio"
+              name="choice"
+              value="{{option.id}}"
+              aria-label="..."
+            />
+            c++
+          </li>
+        </label>
+        <label>
+          <li class="list-group-item">
+            <input
+              class="form-check-input me-1"
+              type="radio"
+              name="choice"
+              value="{{option.id}}"
+              aria-label="..."
+            />
+            Python
+          </li>
+        </label>
+        <label>
+          <li class="list-group-item">
+            <input
+              class="form-check-input me-1"
+              type="radio"
+              name="choice"
+              value="{{option.id}}"
+              aria-label="..."
+            />
+            C
+          </li>
+        </label>
+      </ul>
+      <input type="submit" value="Submit" class="btn btn-primary" />
+    </form>
+  </body>
+</html>
