@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-{% load static %}
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -13,13 +13,15 @@
       integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="{% url 'index' %}"
-          ><h2>Polls Application</h2></a
+          ><h2>Create Polls</h2></a
         >
         <button
           class="navbar-toggler"

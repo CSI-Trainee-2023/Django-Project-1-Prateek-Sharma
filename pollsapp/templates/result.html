@@ -19,11 +19,9 @@
           aria-label="..."
         />
         {{option.option}}
+        <span class="space badge bg-primary rounded-pill">{{option.vote}}</span>
       </li>
     </label>
-    {% endfor %}
+    {% endfor %} {% endblock %}
   </ul>
-  <input type="submit" value="Submit" class="btn btn-primary" />
 </form>
-
-{% endblock %}

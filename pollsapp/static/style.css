@@ -1,0 +1,32 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body{
+  background-color: palegreen;
+}
+.container {
+  width: 50%;
+  /* border: 2px solid black; */
+  margin-top: 20px;
+}
+.list-group {
+  margin-top: 50px;
+}
+.btn-primary {
+  margin-top: 30px !important;
+  margin-left : 60px;
+}
+.space{
+  margin-left: 400px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: large;
+  background-color: aqua;
+}
+label,
+li,
+input {
+  cursor: pointer;
+}
