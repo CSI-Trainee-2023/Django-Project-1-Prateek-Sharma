@@ -23,6 +23,7 @@
         <a class="navbar-brand" href="{% url 'index' %}"
           ><h2>Create Polls</h2></a
         >
+
         <button
           class="navbar-toggler"
           type="button"
@@ -32,11 +33,15 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon">hh</span>
         </button>
       </div>
     </nav>
+    <div>
+      <a href="{% url 'create' %}"><h5>New Questions!</h5></a>
+    </div>
   </body>
+
   <div class="container">
     {% block content %}
     <h1>Hello World</h1>

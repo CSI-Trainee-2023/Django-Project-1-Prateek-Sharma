@@ -16,3 +16,14 @@ class Choice(models.Model):
 
     def __str__(self):
         return self.option
+    
+class newpolls(models.Model):
+    question = models.CharField(max_length=300)
+    option1 = models.CharField(max_length=100)
+    option2 = models.CharField(max_length=100)
+    option3 = models.CharField(max_length=100)
+    option4 = models.CharField(max_length=100)
+
+
+
+

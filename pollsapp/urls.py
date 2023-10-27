@@ -6,4 +6,6 @@ urlpatterns = [
     path('', views.index, name = 'index'),
     path('vote/<str:pk>', views.vote, name = 'vote'),
     path('result/<str:pk>', views.result, name = 'result'),
+    path('create', views.create, name = 'create'),
+    path('saveform', views.saveform, name = 'saveform')
 ]

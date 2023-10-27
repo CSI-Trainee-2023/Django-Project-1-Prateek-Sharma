@@ -1,0 +1,12 @@
+{% extends "base.html" %} {% block content %}
+
+<h3><strong>Here create your New Poll !</strong></h3>
+{{n}}
+
+<form method="POST" action="{% url 'saveform' %}">
+  {% csrf_token %}
+  <div class="list-group">{{form}}</div>
+
+  <input type="submit" value="Save" class="btn btn-primary" />
+</form>
+{% endblock %}
